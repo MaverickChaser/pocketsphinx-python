@@ -14,7 +14,6 @@ config.set_string('-dict', path.join(MODELDIR, 'en-us/cmudict-en-us.dict'))
 decoder = Decoder(config)
 
 # Decode streaming data.
-decoder = Decoder(config)
 decoder.start_utt()
 stream = open(path.join(DATADIR, 'goforward.raw'), 'rb')
 while True:
